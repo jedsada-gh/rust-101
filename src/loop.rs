@@ -1,4 +1,15 @@
 fn main() {
+
+    // for loop
+    for number in 1..4 {
+        println!("{}!", number);
+    }
+
+    for number in (1..4).rev() {
+        println!("{}!", number);
+    }
+
+    // loop
     let mut counter = 0;
     loop {
         counter += 1;
@@ -9,18 +20,9 @@ fn main() {
     }
 
     // while loop
-
     let mut index = 0;
     while index <= 1_000 {
         println!("index: {}", index);
         index += 1;
-    }
-
-    for number in 1..4 {
-        println!("{}!", number);
-    }
-
-    for number in (1..4).rev() {
-        println!("{}!", number);
     }
 }
