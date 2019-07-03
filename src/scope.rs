@@ -1,4 +1,5 @@
 #![allow(overflowing_literals)]
+
 fn main() {
     {
         // This binding only exists in this block
@@ -8,7 +9,6 @@ fn main() {
 
         // This binding *shadows* the outer one
         let long_lived_binding = 5_f32;
-
         println!("inner long: {}", long_lived_binding);
     }
 
