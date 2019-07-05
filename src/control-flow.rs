@@ -25,4 +25,14 @@ fn main() {
     };
 
     println!("result is {}", result);
+
+    let some_value = 5;
+    match some_value {
+        0 => println!("value is zero"),
+        1 => println!("value is one"),
+        5 => {
+            println!("value is five")
+        },
+        _ => (),
+    }
 }
