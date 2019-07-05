@@ -3,6 +3,9 @@ fn main() {
 
     println!("value: {:?}", reference);
 
+    let address = format!("{:p}", reference);
+    println!("{}", address);
+
     match reference {
         &val => println!("value: {:?}", val)
     }
